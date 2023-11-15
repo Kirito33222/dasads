@@ -1,0 +1,363 @@
+/* Enlazar con tipo de letra en Google Fonts */
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,700;0,900;1,600;1,800 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth; /* Retrasa el desplazamiento del scroll */
+}
+
+/* Elimina el margen y espaciado que se genera de manera predeterminada */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Declaracion de variables  */
+:root {
+    --color-de-fondo: #272c3f;
+    --color-plomo: #f5f5f5;
+    --color-blanco: #fff;
+    --color-enlace: #4da8cf;
+    --color-piel: #ada282;
+    --color-negro: #000;
+}
+
+/* Selectores de estilo HTML */
+body {
+    font-family: 'Poppins', sans-serif;/*tipo de letra*/
+    line-height: 1.5; /*interlineado*/
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 900;
+}
+h2 {
+    font-size: 26px; /*Tamaño de letra*/
+    text-align: center; /* Alineacion al centro */ 
+    padding-bottom: 20px;
+    font-weight: 200;
+}
+h3 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+h4 {
+    text-align: center; /* Alineacion al centro */ 
+    padding-bottom: 20px;
+}
+a {
+    color: var(--color-enlace);
+    text-decoration: none; /*Quita el subrayado */
+}
+
+/* Selectores de estilo ID */
+#cabecera, #pie {
+    background-color: #272c3f; /*Color azul*/
+    color: #fff; /*Color blanco*/
+    padding-top: 15px; /*Espacio arriba*/
+    padding-bottom: 15px; /*Espacio abajo*/
+    width: 100%;
+}
+
+#nosotros {
+    background-color: var(--color-blanco); 
+    font-family: 'Playfair Display', serif;
+}
+
+#servicios {
+    background-color: var(--color-plomo);/*Color plomo */
+    color: var(--color-negro) ;
+}
+
+#servicios h2, #equipo h2 , #casos h2{
+    font-size: 35px;
+    padding-bottom: 70px;
+}
+
+#servicios p {
+    padding-bottom: 70px;
+}
+
+#servicios .columna{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#servicios h4{
+    color: var(--color-piel);
+    padding-bottom: 0px;
+}
+
+#equipo {
+    background: linear-gradient(181deg,#a7abc0 20%, #ffffff 95%);
+}
+
+#marquesina {
+    font-size: 25px;
+    color: var(--color-negro);
+    padding-top: 30px;
+}
+
+#menu {
+    background-color: var(--color-de-fondo);
+}
+
+#contactanos {
+    background-color: var(--color-plomo);
+    font-family: 'Playfair Display', serif;
+}
+
+#contactanos h3 {
+    font-size: 25px;
+}
+
+#contactanos p {
+    font-size: 18px;
+}
+
+#casos {
+    background: linear-gradient(181deg,#ffffff 20%, #272c3f 95%);
+}
+
+#casos p {
+    font-size: 18px;
+    padding: 10px;
+}
+
+#casos h2 {
+    padding: 10px;
+}
+
+#casos img {
+    display: block;
+    margin: 0px auto;
+    padding: 20px;
+    width: 60%;
+}
+
+#nosotros img {
+    width: 65%;
+    justify-content: center;
+}
+
+#contactanos img {
+    padding: 20px;
+}
+
+#formulario_contacto {
+    box-shadow: 12px 10px 2px 1px rgba(148,116,116,0.2);
+    padding: 25px;
+}
+
+#formulario_contacto h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#formulario_contacto p {
+    text-align: center;
+}
+
+#pie img{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pie {
+    line-height: 32px;
+}
+
+#pie i {
+    font-size: 32px;
+    color: var(--color-blanco);
+    padding-left: 10px;
+}
+
+#pie .fila {
+    justify-content: space-between;
+}
+
+#boton-irArriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--color-plomo);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    border: var(--color-de-fondo) 1px solid;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+#boton-irArriba:hover {
+    background-color: var(--color-plomo);
+    transform: scale(1.2);
+    transform: translateY(-5px);
+    box-shadow: -3px 8px 25px 0px var(--color-negro);
+}
+/* Selectores de estilo CLASS */
+.entrada {
+    margin: 10px 0px;
+}
+
+.campo {
+    width: 100%;
+    padding: 10px 0px;
+    border-color: rgba(192, 181, 150, 0.5);
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgba(192, 181, 150, .2);
+    font: inherit;
+}
+
+.boton_enviar {
+    background-color: #c0b596;
+    color: var(--color-plomo);
+    padding: 9px 5px;
+    border-color: transparent;
+    border-width: 2px;
+    width: 20%;
+    font: inherit;
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+    border: none;
+
+}
+
+.boton_enviar:hover {
+    background-color: var(--color-de-fondo);
+}
+
+
+.fila {
+    display: flex; /*Se ponen uno al costado del otro */
+    flex-direction: row; /*Se ponen en forma horizontal*/
+}
+.columna {
+    flex-basis: 0; /*Elimina el ancho de las columnas*/
+    flex-grow: 1; /*Crece la columna*/
+    /*Distancia entre columnas*/
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.contenedor{
+    max-width: 80%; /*Utiliza como maximo el 80% del ancho de la pantalla*/
+    /*Centro el contenedor entre el margen izquierdo y derecho*/
+    margin-left: auto; 
+    margin-right: auto;
+}
+.espacio {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
+.mapa {
+    padding-top: 55px;
+    padding-bottom: 25px;
+
+}
+.ajustarmapa {
+    width: 100%;
+}
+
+.contenedor2{
+    max-width: 80%; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+.card{
+    width: 100%;
+    margin: 2px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--color-blanco);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    padding: 10px;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.ajustar_img {
+    width: 100%;
+}
+.grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+.tabla {
+    width: 80%;
+    border: 1px solid var(--color-negro);
+    margin-top: 30px;
+    background-color: var(--color-plomo);
+    /* Centrar el contenedor entre el margen izquierdo y derecho */
+    margin-left: auto; 
+    margin-right: auto;
+    /* Que no tenga separacien de columna y columna */
+    border-collapse: collapse;
+}
+.tabla tr th {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    text-align: left;
+    padding: 10px;
+}
+
+.tabla tr td {
+    padding: 10px;
+    border-bottom: 1px solid var(--color-negro);
+}
+
+.tabla tr td:nth-child(5), .tabla-sedes tr th:nth-child(5)
+ {
+    text-align: right;
+}
+.menu_barra{
+    list-style-type: none; /* Quita las viñetas */
+    font-size: 20px;
+    display: flex; /* Activa flexbox */
+    flex-direction: row; /* Los elementos hijo se colocan uno al lado del otro*/
+    justify-content: space-evenly; /* Coloca espacio proporcional entre los elementos hijo */
+}
+.menu_barra li a {
+    display: block; /*Convierte el elemento de tipo linea a elemento de tipo contenedor */
+    padding: 10px 20px;
+    border-bottom:3px solid transparent;
+    color:var(--color-blanco);
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+.menu_barra li a:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    border-bottom: 3px solid var(--color-piel);
+}
+.logo {
+    width: 250px;
+}
+.barra-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+

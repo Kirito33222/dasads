@@ -1,0 +1,126 @@
+/* Para pantalla de Laptop y monitores desktop pequeños */
+@media screen and (max-width:1200px) {
+    .contenedor {
+        max-width: 80%;
+    }
+    #nosotros .fila {
+        flex-direction: column;
+    }
+    #nosotros img {
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+    }
+    #menu .menu_barra {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:992px) {
+    #contactanos .boton_enviar {
+        padding: 10px 8px;
+    }
+    #cabecera h2 {
+        font-size: 20px;
+    }
+    #cabecera h4 {
+        font-size: 15px;
+    }
+    #servicios .fila {
+        flex-direction: column;
+    }
+    #servicios img {
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #servicios h2, #equipo h2, #casos h2 {
+        font-size: 30px;
+    }
+    #pie h2 {
+        font-size: 24px;
+    }
+    #equipo .card{
+        margin-left: 5px;
+    }
+    .menu_barra {
+        font-size: 18px;
+    }
+    .menu_barra li a {
+        padding: 10px
+    }
+    #contactanos h3 {
+        font-size: 23px;
+    }
+}
+@media screen and (max-width:768px) {
+    .contenedor{
+        max-width: 80%;
+    }
+    #cabecera h2 {
+        font-size: 20px;
+    }
+    #servicios .fila {
+        flex-direction: column;
+    }
+    #servicios img {
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #pie .grupo-1 {
+        grid-template-columns: repeat(2,1fr);
+    }
+    #pie img{
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #casos .tabla {
+        width: 80%;
+        font-size: 0.8em;
+    }
+    #contactanos .fila {
+        flex-direction: column;
+    }
+    #menu .menu_barra {
+        flex-wrap: wrap;
+    }
+    #equipo .contenedor2{
+        display: block;
+        width: 50%;
+    }
+    #equipo .card{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:576px) {
+    .contenedor{
+        max-width: 100%;
+    }
+
+    #nosotros h2 {
+        font-size: 24px;
+    }
+    .menu_barra li a {
+        font-size: 15px;
+        padding: 8px;
+    }
+    #equipo .contenedor2{
+        display: block;
+        width: 50%;
+    }
+    #equipo .card{
+        margin-bottom: 15px;
+    }
+    #contactanos h3 {
+        font-size: 20px;
+    }
+    #contactanos h2 {
+        font-size: 24px;
+    }
+}
